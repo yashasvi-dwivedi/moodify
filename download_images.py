@@ -1,62 +1,65 @@
-import requests
 import os
+import requests
 import time
 
-ACCESS_KEY = (
-    "ei694l_gFOCG6q-IEXXaGxWM42bPst2WGa1KG3piYHg"  # Replace with your actual key
+UNSPLASH_ACCESS_KEY = (
+    "ei694l_gFOCG6q-IEXXaGxWM42bPst2WGa1KG3piYHg"  # ← replace this with your actual key
 )
 
+headers = {"Authorization": f"Client-ID {UNSPLASH_ACCESS_KEY}"}
 
-def download_unsplash_images(keyword, count, label):
-    headers = {"Authorization": f"Client-ID {ACCESS_KEY}"}
-    search_url = "https://api.unsplash.com/search/photos"
-    params = {"query": keyword, "per_page": count}
-
-    image_folder = f"images/{label}"
-    os.makedirs(image_folder, exist_ok=True)
-
-    response = requests.get(search_url, headers=headers, params=params)
-    if response.status_code != 200:
-        print(f"Search failed for {keyword}: {response.status_code}, {response.text}")
-        return []
-
-    data = response.json()
-    results = data.get("results", [])
-    metadata = []
-
-    for i, item in enumerate(results):
-        img_url = item["urls"]["regular"]
-        img_response = requests.get(img_url)
-        if img_response.status_code == 200:
-            img_path = os.path.join(image_folder, f"{label}_{i}.jpg")
-            with open(img_path, "wb") as f:
-                f.write(img_response.content)
-            metadata.append({"filename": img_path, "label": label, "keyword": keyword})
-            print(f"Downloaded: {img_path}")
-            time.sleep(1)
-        else:
-            print(f"Failed to download image {i} for keyword {keyword}")
-
-    return metadata
-
-
-# Example mood categories
 mood_keywords = {
-    "chill": "cozy room lighting",
-    "focus": "minimalist desk setup",
-    "party": "led room lights",
-    "romantic": "warm bedroom lights",
-    "energetic": "bright colorful room",
+    "chill": ["cozy room lighting", "ambient lights"],
+    "focus": ["study desk light", "minimalist workspace"],
+    "party": ["neon party lights", "led room party"],
+    "romantic": ["romantic room lighting", "candle light bedroom"],
+    "energetic": ["vibrant colorful room", "bright neon lights"],
 }
 
-import pandas as pd
+BASE_FOLDER = "images"
+os.makedirs(BASE_FOLDER, exist_ok=True)
 
-all_metadata = []
 
-for mood, keyword in mood_keywords.items():
-    meta = download_unsplash_images(keyword, count=10, label=mood)
-    all_metadata.extend(meta)
+def download_images_for_mood(mood, keywords, total_images=30):
+    per_query = total_images // len(keywords)
+    mood_folder = os.path.join(BASE_FOLDER, mood)
+    os.makedirs(mood_folder, exist_ok=True)
+    img_count = 0
 
-df = pd.DataFrame(all_metadata)
-df.to_csv("moodify_image_labels.csv", index=False)
-print("✅ All images downloaded and labeled.")
+    for keyword in keywords:
+        page = 1
+        while img_count < total_images:
+            url = "https://api.unsplash.com/search/photos"
+            params = {"query": keyword, "per_page": min(per_query, 10), "page": page}
+
+            response = requests.get(url, headers=headers, params=params)
+            data = response.json()
+
+            for result in data.get("results", []):
+                img_url = result["urls"]["regular"]
+                try:
+                    img_data = requests.get(img_url).content
+                    filename = f"{mood}_{img_count}.jpg"
+                    filepath = os.path.join(mood_folder, filename)
+
+                    with open(filepath, "wb") as f:
+                        f.write(img_data)
+
+                    print(f"[{mood}] Saved: {filepath}")
+                    img_count += 1
+
+                    if img_count >= total_images:
+                        break
+
+                except Exception as e:
+                    print(f"[{mood}] Failed to save image: {e}")
+
+            page += 1
+            time.sleep(1)
+
+
+print("Starting download...")
+for mood, keywords in mood_keywords.items():
+    download_images_for_mood(mood, keywords, total_images=50)
+
+print("Download complete.")

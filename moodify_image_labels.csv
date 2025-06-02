@@ -1,51 +1,51 @@
 filename,label,keyword
-images/chill\chill_0.jpg,chill,cozy room lighting
-images/chill\chill_1.jpg,chill,cozy room lighting
-images/chill\chill_2.jpg,chill,cozy room lighting
-images/chill\chill_3.jpg,chill,cozy room lighting
-images/chill\chill_4.jpg,chill,cozy room lighting
-images/chill\chill_5.jpg,chill,cozy room lighting
-images/chill\chill_6.jpg,chill,cozy room lighting
-images/chill\chill_7.jpg,chill,cozy room lighting
-images/chill\chill_8.jpg,chill,cozy room lighting
-images/chill\chill_9.jpg,chill,cozy room lighting
-images/focus\focus_0.jpg,focus,minimalist desk setup
-images/focus\focus_1.jpg,focus,minimalist desk setup
-images/focus\focus_2.jpg,focus,minimalist desk setup
-images/focus\focus_3.jpg,focus,minimalist desk setup
-images/focus\focus_4.jpg,focus,minimalist desk setup
-images/focus\focus_5.jpg,focus,minimalist desk setup
-images/focus\focus_6.jpg,focus,minimalist desk setup
-images/focus\focus_7.jpg,focus,minimalist desk setup
-images/focus\focus_8.jpg,focus,minimalist desk setup
-images/focus\focus_9.jpg,focus,minimalist desk setup
-images/party\party_0.jpg,party,led room lights
-images/party\party_1.jpg,party,led room lights
-images/party\party_2.jpg,party,led room lights
-images/party\party_3.jpg,party,led room lights
-images/party\party_4.jpg,party,led room lights
-images/party\party_5.jpg,party,led room lights
-images/party\party_6.jpg,party,led room lights
-images/party\party_7.jpg,party,led room lights
-images/party\party_8.jpg,party,led room lights
-images/party\party_9.jpg,party,led room lights
-images/romantic\romantic_0.jpg,romantic,warm bedroom lights
-images/romantic\romantic_1.jpg,romantic,warm bedroom lights
-images/romantic\romantic_2.jpg,romantic,warm bedroom lights
-images/romantic\romantic_3.jpg,romantic,warm bedroom lights
-images/romantic\romantic_4.jpg,romantic,warm bedroom lights
-images/romantic\romantic_5.jpg,romantic,warm bedroom lights
-images/romantic\romantic_6.jpg,romantic,warm bedroom lights
-images/romantic\romantic_7.jpg,romantic,warm bedroom lights
-images/romantic\romantic_8.jpg,romantic,warm bedroom lights
-images/romantic\romantic_9.jpg,romantic,warm bedroom lights
-images/energetic\energetic_0.jpg,energetic,bright colorful room
-images/energetic\energetic_1.jpg,energetic,bright colorful room
-images/energetic\energetic_2.jpg,energetic,bright colorful room
-images/energetic\energetic_3.jpg,energetic,bright colorful room
-images/energetic\energetic_4.jpg,energetic,bright colorful room
-images/energetic\energetic_5.jpg,energetic,bright colorful room
-images/energetic\energetic_6.jpg,energetic,bright colorful room
-images/energetic\energetic_7.jpg,energetic,bright colorful room
-images/energetic\energetic_8.jpg,energetic,bright colorful room
-images/energetic\energetic_9.jpg,energetic,bright colorful room
+images/chill\chill_0.jpg,chill,"['cozy room lighting', 'warm cozy lights']"
+images/chill\chill_1.jpg,chill,"['cozy room lighting', 'warm cozy lights']"
+images/chill\chill_2.jpg,chill,"['cozy room lighting', 'warm cozy lights']"
+images/chill\chill_3.jpg,chill,"['cozy room lighting', 'warm cozy lights']"
+images/chill\chill_4.jpg,chill,"['cozy room lighting', 'warm cozy lights']"
+images/chill\chill_5.jpg,chill,"['cozy room lighting', 'warm cozy lights']"
+images/chill\chill_6.jpg,chill,"['cozy room lighting', 'warm cozy lights']"
+images/chill\chill_7.jpg,chill,"['cozy room lighting', 'warm cozy lights']"
+images/chill\chill_8.jpg,chill,"['cozy room lighting', 'warm cozy lights']"
+images/chill\chill_9.jpg,chill,"['cozy room lighting', 'warm cozy lights']"
+images/focus\focus_0.jpg,focus,"['minimalist desk setup', 'study desk lighting']"
+images/focus\focus_1.jpg,focus,"['minimalist desk setup', 'study desk lighting']"
+images/focus\focus_2.jpg,focus,"['minimalist desk setup', 'study desk lighting']"
+images/focus\focus_3.jpg,focus,"['minimalist desk setup', 'study desk lighting']"
+images/focus\focus_4.jpg,focus,"['minimalist desk setup', 'study desk lighting']"
+images/focus\focus_5.jpg,focus,"['minimalist desk setup', 'study desk lighting']"
+images/focus\focus_6.jpg,focus,"['minimalist desk setup', 'study desk lighting']"
+images/focus\focus_7.jpg,focus,"['minimalist desk setup', 'study desk lighting']"
+images/focus\focus_8.jpg,focus,"['minimalist desk setup', 'study desk lighting']"
+images/focus\focus_9.jpg,focus,"['minimalist desk setup', 'study desk lighting']"
+images/party\party_0.jpg,party,"['led room lights', 'party room']"
+images/party\party_1.jpg,party,"['led room lights', 'party room']"
+images/party\party_2.jpg,party,"['led room lights', 'party room']"
+images/party\party_3.jpg,party,"['led room lights', 'party room']"
+images/party\party_4.jpg,party,"['led room lights', 'party room']"
+images/party\party_5.jpg,party,"['led room lights', 'party room']"
+images/party\party_6.jpg,party,"['led room lights', 'party room']"
+images/party\party_7.jpg,party,"['led room lights', 'party room']"
+images/party\party_8.jpg,party,"['led room lights', 'party room']"
+images/party\party_9.jpg,party,"['led room lights', 'party room']"
+images/romantic\romantic_0.jpg,romantic,"['romantic room lights', 'candle light room']"
+images/romantic\romantic_1.jpg,romantic,"['romantic room lights', 'candle light room']"
+images/romantic\romantic_2.jpg,romantic,"['romantic room lights', 'candle light room']"
+images/romantic\romantic_3.jpg,romantic,"['romantic room lights', 'candle light room']"
+images/romantic\romantic_4.jpg,romantic,"['romantic room lights', 'candle light room']"
+images/romantic\romantic_5.jpg,romantic,"['romantic room lights', 'candle light room']"
+images/romantic\romantic_6.jpg,romantic,"['romantic room lights', 'candle light room']"
+images/romantic\romantic_7.jpg,romantic,"['romantic room lights', 'candle light room']"
+images/romantic\romantic_8.jpg,romantic,"['romantic room lights', 'candle light room']"
+images/romantic\romantic_9.jpg,romantic,"['romantic room lights', 'candle light room']"
+images/energetic\energetic_0.jpg,energetic,"['bright colorful room', 'vibrant neon room']"
+images/energetic\energetic_1.jpg,energetic,"['bright colorful room', 'vibrant neon room']"
+images/energetic\energetic_2.jpg,energetic,"['bright colorful room', 'vibrant neon room']"
+images/energetic\energetic_3.jpg,energetic,"['bright colorful room', 'vibrant neon room']"
+images/energetic\energetic_4.jpg,energetic,"['bright colorful room', 'vibrant neon room']"
+images/energetic\energetic_5.jpg,energetic,"['bright colorful room', 'vibrant neon room']"
+images/energetic\energetic_6.jpg,energetic,"['bright colorful room', 'vibrant neon room']"
+images/energetic\energetic_7.jpg,energetic,"['bright colorful room', 'vibrant neon room']"
+images/energetic\energetic_8.jpg,energetic,"['bright colorful room', 'vibrant neon room']"
+images/energetic\energetic_9.jpg,energetic,"['bright colorful room', 'vibrant neon room']"

@@ -22,7 +22,7 @@ model.eval()
 
 
 # Preprocess and predict
-image = Image.open("images/energetic/energetic_0.jpg").convert("RGB")
+image = Image.open("images/energetic/energetic_.jpg").convert("RGB")
 input_tensor = transform(image).unsqueeze(0).to(device)  # [1, 3, 224, 224]
 
 
