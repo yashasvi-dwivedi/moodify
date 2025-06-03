@@ -28,4 +28,14 @@ mood_to_playlist = {
 }
 
 playlist_uri = mood_to_playlist[predicted_mood]
-sp.start_playback(context_uri=playlist_uri)
+
+# Find active device
+devices = sp.devices()
+if devices["devices"]:
+    device_id = devices["devices"][0]["id"]  # Use the first available device
+    sp.transfer_playback(device_id=device_id, force_play=True)
+    sp.start_playback(device_id=device_id, context_uri=playlist_uri)
+else:
+    print(
+        "No active Spotify device found. Please open Spotify on your computer or phone and try again."
+    )
