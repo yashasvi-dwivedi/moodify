@@ -1,6 +1,7 @@
 # spotify_auth.py
 from spotipy import Spotify
 from spotipy.oauth2 import SpotifyOAuth
+from predict_mood import predicted_mood
 
 sp = Spotify(
     auth_manager=SpotifyOAuth(
@@ -17,3 +18,14 @@ if current and current["is_playing"]:
     print("Currently playing:", current["item"]["name"])
 else:
     print("No music playing.")
+
+mood_to_playlist = {
+    "chill": "spotify:playlist:37i9dQZF1DX4WYpdgoIcn6",
+    "focus": "spotify:playlist:37i9dQZF1DX8NTLI2TtZa6",
+    "party": "spotify:playlist:37i9dQZF1DXaXB8fQg7xif",
+    "romantic": "spotify:playlist:37i9dQZF1DWXbttAJcbphz",
+    "energetic": "spotify:playlist:37i9dQZF1DX1g0iEXLFycr",
+}
+
+playlist_uri = mood_to_playlist[predicted_mood]
+sp.start_playback(context_uri=playlist_uri)
