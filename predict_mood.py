@@ -3,7 +3,7 @@ from PIL import Image
 import torch
 from torchvision import transforms, models
 import torch.nn as nn
-import os
+
 
 model_path = "model.pth"
 class_names = ["chill", "focus", "party", "romantic", "energetic"]
