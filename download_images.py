@@ -2,9 +2,7 @@ import os
 import requests
 import time
 
-UNSPLASH_ACCESS_KEY = (
-    "ei694l_gFOCG6q-IEXXaGxWM42bPst2WGa1KG3piYHg"  # ← replace this with your actual key
-)
+UNSPLASH_ACCESS_KEY = "YOUR_ACCESS_KEY"  # ← replace this with your actual key
 
 headers = {"Authorization": f"Client-ID {UNSPLASH_ACCESS_KEY}"}
 
