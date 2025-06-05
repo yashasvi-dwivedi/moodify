@@ -1,13 +1,12 @@
-# 🎧 Moodify – Mood-Based Lighting & Spotify Music Control
+# 🎧 Moodify – Mood-Based Spotify Music Control
 
-Moodify is a Python-based application that detects your mood using a webcam, adjusts the lighting in your room, and plays mood-appropriate music on Spotify. It leverages deep learning for emotion recognition, smart lighting control, and seamless Spotify integration—making your environment match your feelings.
+Moodify is a Python-based application that detects your mood using a webcam and plays mood-appropriate music on Spotify. It leverages deep learning for emotion recognition and seamless Spotify integration—making your environment match your feelings through music.
 
 ---
 
 ## 🌟 Features
 
 - 🧠 **Mood Detection** using webcam + ResNet18 deep learning model
-- 💡 **Smart Lighting** that matches your current emotion
 - 🎵 **Spotify Integration** for auto-playing mood-matching playlists
 - 📊 **Confusion Matrix & Accuracy Evaluation** for model performance
 - 🖥️ Optional GUI or Web App (Flask or Tkinter)
@@ -98,15 +97,13 @@ moodify/
 
 1. **Image Capture:** Uses OpenCV to capture an image from your webcam.
 2. **Mood Prediction:** ResNet18 model predicts one of: `chill`, `focus`, `party`, `romantic`, `energetic`.
-3. **Lighting Control:** (Optional, requires integration with smart lights, e.g., Philips Hue).
-4. **Spotify Playback:** Authenticates with Spotify and plays a playlist matching your mood.
+3. **Spotify Playback:** Authenticates with Spotify and plays a playlist matching your mood.
 
 ---
 
 ## 📝 Customization
 
 - **Add more moods:** Add new class labels in `predict_mood.py`, retrain your model, and update `mood_to_playlist` in `spotify_auth.py`.
-- **Smart Lights:** Integrate your preferred smart lighting API for full automation.
 
 ---
 
@@ -133,4 +130,4 @@ This project is licensed under the MIT License.
 
 ---
 
-**Happy Moodifying! 🎶💡**
+**Happy Moodifying! 🎶**
