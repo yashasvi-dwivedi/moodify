@@ -1,6 +1,6 @@
 # 🎧 Moodify – Mood-Based Lighting & Spotify Music Control
 
-Moodify is a Python-based application that detects your mood using a webcam, changes your smart lighting accordingly, and plays mood-appropriate music on Spotify.
+Moodify is a Python-based application that detects your mood using a webcam , detects the lighting in your room, and plays mood-appropriate music on Spotify.
 
 ---
 
