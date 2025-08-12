@@ -2,7 +2,7 @@ import torch
 from torchvision import datasets, transforms, models
 from torch.utils.data import DataLoader, random_split
 from torch import nn
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay  # type: ignore
 import matplotlib.pyplot as plt
 
 # Step 1: Setup device
@@ -56,5 +56,9 @@ plt.tight_layout()
 plt.show()
 
 # Step 7: Print accuracy
-accuracy = 100 * sum(p == l for p, l in zip(all_preds, all_labels)) / len(all_labels)
+accuracy = (
+    100
+    * sum(pred == label for pred, label in zip(all_preds, all_labels))
+    / len(all_labels)
+)
 print(f"Validation Accuracy: {accuracy:.2f}%")

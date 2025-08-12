@@ -1,12 +1,12 @@
 # spotify_auth.py
-from spotipy import Spotify
-from spotipy.oauth2 import SpotifyOAuth
+from spotipy import Spotify  # type: ignore
+from spotipy.oauth2 import SpotifyOAuth  # type: ignore
 from predict_mood import predicted_mood
 
 sp = Spotify(
     auth_manager=SpotifyOAuth(
-        client_id="b82f472dc67c4fac8d959873093708ae",
-        client_secret="7e6d741868f647d88d31ca33eade47c8",
+        client_id="YOUR_CLIENT_ID",
+        client_secret="YOUR_CLIENT_SECRET_ID",
         redirect_uri="http://127.0.0.1:8888/callback",
         scope="user-modify-playback-state user-read-playback-state",
     )
