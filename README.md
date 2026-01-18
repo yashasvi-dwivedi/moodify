@@ -4,7 +4,7 @@
 Moodify is a Python-based application that detects your mood using a webcam , detects the lighting in your room, and plays mood-appropriate music on Spotify. It uses a pre-trained ResNet18 model for mood detection and integrates with the Spotify API to control music playback based on your current mood.
 =======
 Moodify is a Python-based application that detects your mood using a webcam and plays mood-appropriate music on Spotify. It leverages deep learning for emotion recognition and seamless Spotify integration—making your environment match your feelings through music.
->>>>>>> 427d4a5a9b4896a6cfa1975f302ba8e60377ddd0
+>>>>>>> 
 
 ---
 
@@ -20,7 +20,7 @@ Moodify is a Python-based application that detects your mood using a webcam and 
 - 🎵 **Spotify Integration** for auto-playing mood-matching playlists
 - 📊 **Confusion Matrix & Accuracy Evaluation** for model performance
 - 🖥️ Optional GUI or Web App (Flask or Tkinter)
->>>>>>> 427d4a5a9b4896a6cfa1975f302ba8e60377ddd0
+>>>>>>> 
 
 ---
 
